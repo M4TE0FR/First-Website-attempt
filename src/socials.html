@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Social Media Links</title>
+    <style>
+       .banner {
+        background-color: #282f3d;
+        color: #ffffff;
+        padding: 16px;
+        text-align: center;
+      }
+
+      .dropdown {
+        position: absolute;
+        top: 27px;
+        right: 60px;
+        display: inline-block;
+      }
+
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropdown-btn {
+        background-color: #1c4081;
+      }
+
+      img {
+        width: 64px;
+        height: 64px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .light-mode-btn, .dark-mode-btn {
+        padding: 8px 16px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .light-mode-btn {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+      .dark-mode-btn {
+        background-color: #000000;
+        color: #ffffff;
+      }
+
+      .light-mode-btn{
+        position: absolute;
+        top: 870px;
+        left: 8px;
+      }
+      .dark-mode-btn{
+        position: absolute;
+        top: 902px;
+        left: 8px;
+      }
+
+      body {
+        background-color: #000000;
+        color: #ffffff;
+      }
+    </style>
+    <body style="font-family: Arial, sans-serif">
+    </body>
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Socials</h1>
+
+      <div class="dropdown">
+        <button class="dropdown-btn">Menu <img src="https://cdn-icons-png.flaticon.com/512/2311/2311531.png" alt="Menu" /></button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="#">stuff</a>
+          <a href="#">stuff</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>My Social Media Links</h1>
+      <p>Click on the icons below to visit my social media pages.</p>
+
+      <a href="https://github.com/M4TE0FR"><img src="https://static-00.iconduck.com/assets.00/github-emoji-512x506-u3px3qmr.png" alt="Github" /></a>
+      <a href="https://www.instagram.com/mateo.co.uk/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" alt="Instagram" /></a>
+      <a href="https://www.youtube.com/@mateofrl"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="Youtube" /></a>  
+
+      <br />
+      <button class="light-mode-btn" onclick="toggleLightDarkMode('light')">Flashbang</button>
+      <button class="dark-mode-btn" onclick="toggleLightDarkMode('dark')">Dark Mode</button>
+    </div>
+
+    <script>
+
+      function toggleLightDarkMode(mode) {
+        if (mode === 'light') {
+          document.body.style.backgroundColor = '#ffffff';
+          document.body.style.color = '#000000';
+        } else if (mode === 'dark') {
+          document.body.style.backgroundColor = '#000000';
+          document.body.style.color = '#ffffff';
+        }
+      }
+    </script>
+  </body>
+</html>
